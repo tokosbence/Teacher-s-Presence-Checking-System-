@@ -1,0 +1,181 @@
+label {
+    display:block;
+}
+.container{
+    background-color:white;
+    border-top: 5px solid  gray;
+    border-radius: 4px;
+    height: 740px;
+    width: 1650px; 
+}
+
+.container h1 {
+  
+}
+
+.container button {
+    background-color: #f44336; 
+    border: 1px solid #e53935;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    float: right;
+    
+}
+.container button:hover {
+    background-color: #e53935;
+}
+
+#one label {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #f44336;
+   
+}
+
+
+#one input {
+    padding: 5px 540px;
+    font-size: 15px;
+    border-radius: 4px;
+   
+}
+
+
+
+#two label {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #f44336;
+   
+}
+
+#two input {
+    padding: 5px 540px;
+    font-size: 15px;
+    border-radius: 4px;
+    
+    
+}
+
+#three label {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #f44336;
+}
+
+#three input {
+    padding: 5px 540px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+#four label {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #f44336;
+}
+
+#four input {
+    padding: 5px 540px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+#five label {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #f44336;
+}
+
+#five input {
+    padding: 5px 540px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+#six label {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    
+}
+
+.radio {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.radio input {
+ 
+}
+
+#seven label {
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+#seven input {
+    
+    padding: 5px 540px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+#eight label {
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+#eight input {
+   
+    padding: 5px 540px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+#nine label {
+   
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+#nine input {
+    
+    padding: 5px 540px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+#ten label {
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+#ten input {
+   
+    padding: 5px 540px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+.container .button3 {
+    background-color: #4caf50; 
+    border: 1px solid #43a047;
+   
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    float: left;
+  
+   
+}
+.container .button3:hover {
+    background-color: #43a047;
+}

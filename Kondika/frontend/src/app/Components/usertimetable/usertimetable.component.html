@@ -1,0 +1,57 @@
+<table class="table table-one" bgcolor="#f2f2f2" width="100%">
+  <tr>
+    <td valign="top" width="200px">
+      <app-usernavbar></app-usernavbar>
+    </td>
+    <td valign="top">
+      <div class="container">
+        <div class="panel panel-default ">
+          <h1 class="panel-title">
+            <i class="fa fa-table"></i> Timetable
+          </h1>
+        </div>
+      </div>
+      <table class="table table-hover" width="100%" border="2">
+        <tr>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+        </tr>
+        <tr>
+          <td valign="top">
+            <p *ngFor="let timetable of forMonday">
+              {{timetable.timetable.time}} - {{timetable.timetable.time}} {{timetable.room.name}}
+              <br> {{timetable.classObj.name}} - {{timetable.subject.name}}
+            </p>
+          </td>
+          <td valign="top">
+            <p *ngFor="let timetable of forTuesday">
+              {{timetable.timetable.time}} - {{timetable.timetable.time}} {{timetable.room.name}}
+              <br> {{timetable.classObj.name}} - {{timetable.subject.name}}
+            </p>
+          </td>
+          <td valign="top">
+            <p *ngFor="let timetable of forWednesday">
+              {{timetable.timetable.time}} - {{timetable.timetable.time}} {{timetable.room.name}}
+              <br> {{timetable.classObj.name}} - {{timetable.subject.name}}
+            </p>
+          </td>
+          <td valign="top">
+            <p *ngFor="let timetable of forThursday">
+              {{timetable.timetable.time}} - {{timetable.timetable.time}} {{timetable.room.name}}
+              <br> {{timetable.classObj.name}} - {{timetable.subject.name}}
+            </p>
+          </td>
+          <td valign="top">
+            <p *ngFor="let timetable of forFriday">
+              {{timetable.timetable.time}} - {{timetable.timetable.time}} {{timetable.room.name}}
+              <br> {{timetable.classObj.name}} - {{timetable.subject.name}}
+            </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

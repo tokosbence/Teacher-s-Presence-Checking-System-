@@ -1,0 +1,207 @@
+<!--                   Header              -->
+<div class="events">
+<ul>
+  <li><a href="#logout">
+      <i class="fa fa-power-off" ></i>
+      <b>Logout</b>
+      </a>
+  </li>
+  <li><a href="#user">
+      <i class="fa fa-user" aria-hidden="true"></i>
+      <b>User Name</b>
+      </a>
+  </li>
+  <li><a ng-click="chgAcYearModal()">
+        <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+        </a>
+  </li>
+</ul>
+
+<!-- Navbar -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="vertical-menu">
+  
+  <a href="#" class="active"><b>Kondika</b>
+    
+  </a>
+   <a href="http://localhost:8080/teachers">
+    <i class="fa fa-user-circle cust" aria-hidden="true"></i>
+    <b>Teachers</b>
+  </a>
+  <a href="http://localhost:8080/subject">
+    <i class="fa fa-book cust" aria-hidden="true"></i>
+    <b>Subjects</b>
+  </a>
+  <a href="#">
+    <i class="fa fa-clock-o cust" aria-hidden="true"></i>
+    <b>Classes Schedule</b>
+  </a>
+  <a href="#">
+    <i class="fa fa-envelope cust" aria-hidden="true"></i>
+    <b>Messages</b>
+  </a>
+  <a href="#">
+    <i class="fa fa-calendar cust" aria-hidden="true"></i>
+    <b>Calendar</b>
+  </a>
+  <a href="http://localhost:8080/classes">
+    <i class="fa fa-building cust" aria-hidden="true"></i>
+    <b>Classes</b>
+  </a>
+  <a href="#">
+    <i class="fa fa-glass cust" aria-hidden="true"></i>
+    <b>Events</b>
+  </a>
+  <a href="#">
+    <i class="fa fa-file cust" aria-hidden="true"></i>
+    <b>Study Material</b>
+  </a>
+  <a href="http://localhost:8080/library">
+    <i class="fa fa-folder-open cust" aria-hidden="true"></i>
+    <b>Library</b>
+  </a>
+  <a href="#">
+    <i class="fa fa-camera-retro cust" aria-hidden="true"></i>
+    <b>Media Center</b>
+  </a>
+  <a href="http://localhost:8080/exams">
+    <i class="fa fa-list cust" aria-hidden="true"></i>
+    <b>Exams List</b>
+  </a> 
+  <a href="#">
+    <i class="fa fa-pie-chart" aria-hidden="true"></i>
+    <b>New Reports</b>    
+  </a> 
+  <a href="#">
+    <i class="fa fa-th-list" aria-hidden="true"></i>
+    <b>Old Reports</b>
+  </a> 
+  <a href="#">
+    <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+    <b>Assignments</b>
+  </a> 
+ 
+</div>
+
+<!--                     Body                       -->
+ 
+
+<div class="container">
+  <div class="panel panel-default ">
+    <div id="first">
+      <i class="fa fa-clock-o fa-2x cust" aria-hidden="true"></i>
+      <h1 class="panel-title"><b>Events</b></h1>
+    </div>
+  </div>
+  <div *ngIf=isAdd ng-class="{'hidden': !toggleEdit}">
+    <button class="button" (click)="toggleEdit()">Add new event</button>
+  </div>
+</div>
+
+<div class="container-two"> 
+  <div *ngIf=isAdd ng-class="{'hidden': !toggleEdit}">
+    <h1>List events</h1>
+
+    <div class="input">
+      
+      <input type="text" ng-model="searchBox">
+      <i class="fa fa-search " aria-hidden="true"></i>
+
+    </div>
+
+   <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Evenet title</th>
+          <th>Event Description</th>
+          <th>Event Place</th>
+          <th>Date</th>
+          <th>Operations</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr >
+          <td>Education Week End</td>
+          <td>Education Week is held each year in public schools across the state where you can join in a wide range of local and regional activities and events showcasing the quality and diversity of education across NSW. 
+          </td>
+          <td>Activity Area</td>
+          <td>27/05/2016</td>
+          <td>
+              <button class="button button1" (click)="toggleEdit()" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+              <button class="button button2" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+            </td>
+        </tr>
+        <tr>
+         <td>Education Week End</td>
+          <td>Education Week is held each year in public schools across the state where you can join in a wide range of local and regional activities and events showcasing the quality and diversity of education across NSW. 
+          </td>
+          <td>Activity Area</td>
+          <td>27/05/2016</td>
+          <td>
+            
+              <button class="button button1" (click)="toggleEdit()" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+              <button class="button button2" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+              
+          </td>
+        </tr>
+        <tr>
+          <td>Education Week End</td>
+          <td>Education Week is held each year in public schools across the state where you can join in a wide range of local and regional activities and events showcasing the quality and diversity of education across NSW. 
+          </td>
+          <td>Activity Area</td>
+          <td>27/05/2016</td>
+          <td>
+              <button class="button button1" (click)="toggleEdit()" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+              <button class="button button2" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div *ngIf=isEdit class="container-three" >
+  
+   <h1> Add new event</h1>
+
+    <button (click)="toggleEdit()">Cancel</button>
+
+   <form >
+      <div id="one" >
+        <label ><b>Evenet Title:</b></label> 
+        <input type="text" ng-model="EvenetTitle" placeholder="Evenet Title" >
+      </div>
+      <br>
+
+    <div id="two">
+      <label ><b>Event Description:</b></label> 
+      <input type="text" ng-model="EventDescription" placeholder="Event Description" >
+     
+    </div>
+     <br>
+     
+     <div id="three">
+      <label><b>Event Place:</b></label>
+      <input type="text" ng-model="EventPlace" placeholder="Event Place" >
+    </div>
+     <br>
+
+     <div id="four">
+      <label><b>Date:</b></label>
+      <input type="date" ng-model="date" placeholder="" >
+    </div>
+     <br>
+    
+  
+   </form>
+  
+</div>
+
+
+<!--                    Footer                       -->
+<footer>
+        <p>Copyright © 2017<a style="color:#0a93a6; text-decoration:none;" href="http://www.codespring.ro/"> Codespring</a>- Software development and outsourcing </p>
+</footer>
+</div>

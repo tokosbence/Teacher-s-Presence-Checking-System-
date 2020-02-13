@@ -1,0 +1,276 @@
+.events {
+   
+    background-color: #f2f2f2;
+    height: 950px;
+    border-radius: 24px;
+   
+}
+/* ----------- Header -----------*/
+
+ul {
+    
+    list-style-type: none;
+    margin-top:15px;
+    margin-left:  150px;
+    margin-right: 2px;
+    border-radius: 25px;
+    padding: 4px;
+    overflow: hidden;
+    background-color: #333;
+   
+}
+
+li a {
+    cursor: pointer;
+    text-align: left;
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 23px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    border-radius: 18px;
+    background-color: #585c74;
+}
+
+/* ------------ Navbar ------------*/ 
+
+.vertical-menu {
+    margin-top:-88px;
+    margin-left: 0px;
+    width: 180px; 
+    
+}
+
+.vertical-menu a {
+    height: 29px;
+    margin-top: 0px;
+    background-color: #d8f3e5;
+    border-color: #53c68c;
+    color: #0b0b0f;
+    display: block;
+    border-radius: 24px;
+    padding: 16px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color:  #333;
+    color:white;
+}
+
+.vertical-menu a.active {
+    height: 40px;
+    text-align: center;
+    font-size:20px; 
+    background-color: #2d8659;
+    color: white;
+}
+/* ------------------ Body ------------------*/
+
+ .container {
+    background-color: #f2f2f2;
+    margin-top: -830px;
+    margin-left: 220px;
+    width: 1650px;
+    height: 75px;
+    border-radius: 4px;
+}
+ 
+.container h1 {
+    margin-top: -35px;
+    margin-left: 45px;
+}
+.cust {
+    margin-top: 15px;
+}
+ .container .button {
+    background-color: #4CAF50; 
+    border: 1px solid green;
+    margin-top: -45px;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    float: right;
+ }
+
+.container .button:hover {
+    background-color: #3e8e41;
+}
+
+
+.container-two {
+    background-color:white;
+    border-top: 5px solid  gray;
+    border-radius: 4px;
+    margin-top: 0px;
+    margin-left: 220px;
+    height: 740px;
+    width: 1650px;
+}
+
+ .container-two h1 {
+  margin-left: 45px;  
+}
+
+.input {
+    margin-top:-45px;
+    margin-left: 1350px;
+   
+}
+.container-two table {
+    border-collapse: collapse;
+    margin-top:25px;
+    margin-left: 45px;
+    width: 1560px;
+}
+.button1 {
+    padding: 10px;
+    border: 0px;;
+    background-color: #2196f3;
+    cursor: pointer;
+} 
+
+.button2 {
+    padding: 10px;
+    border: 0px;
+    background-color: #f44336;
+    cursor: pointer;
+} 
+
+
+.container-two th, td {
+    padding: 10px;
+    text-align: left;
+    font-family: 'Times New Roman', Times,serif;
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+.container-two tr:hover{
+    background-color:#f5f5f5;
+}
+
+.container-three {
+    background-color:white;
+    border-top: 5px solid  gray;
+    border-radius: 4px;
+    margin-top: -750px;
+    margin-left: 220px;
+    height: 440px;
+    width: 1650px; 
+
+}
+.container-three h1 {
+    margin-top: 25px;
+    margin-left: 45px;
+}
+
+.container-three button {
+     background-color: #f44336; 
+    border: 1px solid #e53935;
+    margin-top: -70px;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    float: right;
+    margin-right: 55px;
+   
+}
+.container-three button:hover {
+    background-color: #e53935;
+}
+
+#one label {
+    margin-top: 880px;
+    margin-left: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+   
+}
+
+#one input {
+    margin-left: 90px;
+    padding: 8px 540px;
+    font-size: 15px;
+    border-radius: 4px;
+   
+}
+
+
+#two label {
+    margin-top: 880px;
+    margin-left: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    
+}
+
+#two input {
+    margin-left: 40px;
+    padding: 25px 541px;
+    font-size: 15px;
+    border-radius: 4px;
+   
+
+}
+
+#three label {
+    margin-top: 880px;
+    margin-left: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}  
+
+#three input {
+    margin-left: 94px;
+    padding: 8px 540px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+#four label {
+    margin-top: 880px;
+    margin-left: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}  
+
+#four input {
+    margin-left: 154px;
+    padding: 8px 560px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+/* --------------------------- Footer -----------------------*/
+
+footer{
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    text-align: center;
+    color: #CCC;
+}
+
+footer p {
+    padding: 10.5px;
+    margin: 0px;
+    line-height: 100%;
+}

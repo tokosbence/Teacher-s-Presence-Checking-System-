@@ -1,0 +1,35 @@
+<table  width="100%">
+  <tr>
+    <td valign="top" width="200px">
+      <app-adminnavbar></app-adminnavbar>
+    </td>
+    <td valign="top" >
+      <div class="container">
+        <h1> Add Subject</h1>
+        <form>
+          <p >
+            <label><b>Subject Name:</b></label>
+            <input type="text" placeholder="Subject name" name="subjectname" [(ngModel)]="subject.name" #name="ngModel">
+          </p>
+          <p>
+            <label><b>Teacher:</b></label>
+            <select [(ngModel)]="selectedValue">
+                          <option *ngFor="let employer of employers" [ngValue]="employer">{{employer.firstname}}</option>
+            </select>
+          </p>
+          <p>
+            <label><b>Passgrade:</b></label>
+            <input type="number" name="passgrade" placeholder="Pass Grade" [(ngModel)]="subject.passgrade" #passgrade="ngModel">
+          </p>
+          <p>
+            <label><b>Schoolbook:</b></label>
+            <input type="text" placeholder="Schoolbook" name="schoolbook" [(ngModel)]="subject.schoolbook" #schoolbook="ngModel">
+          </p>
+          <button class="button button3" (click)="updateSubject()" routerLink="/subjects">Save</button>
+          
+          <button class="button button" routerLink="/subjects">Cancel</button>
+        </form>
+      </div>
+    </td>
+  </tr>
+</table>

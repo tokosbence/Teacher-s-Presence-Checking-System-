@@ -1,0 +1,86 @@
+<table >
+  <tr>
+    <td>
+      <app-adminnavbar></app-adminnavbar>
+    </td>
+    <td>
+      <table >
+        <tr>
+          <td>
+            <div class="container">
+
+              <h1> Add teacher
+
+              </h1>
+
+
+
+              <form>
+                <div id="one">
+                  <label><b>First Name:</b></label>
+                  <input type="text"  placeholder="First name" name="firstname" [(ngModel)]="employer.firstname" #firstname="ngModel">
+                </div>
+                <br>
+                <div id="two">
+                  <label><b>Last Name:</b></label>
+                  <input type="text" name="lastname" placeholder="Last name" [(ngModel)]="employer.lastname" #lastname="ngModel">
+                </div>
+                <br>
+                <!--<div id="three">
+                  <label><b>Username:</b></label>
+                  <input type="text" name="username" placeholder="Username" [(ngModel)]="employer.employeUser.username" #username="ngModel">
+                </div>-->
+                <br>
+                <div id="four">
+                  <label><b>Email adress:</b></label>
+                  <input type="text" name="email" placeholder="Email adress" [(ngModel)]="employer.email" #email="ngModel">
+                </div>
+                <br>
+                <!--<div id="five">
+                  <label><b>Password:</b></label>
+                  <input type="password" name="password" placeholder="Password" [(ngModel)]="newEmployer.employeUser.password" #password="ngModel">
+                </div>-->
+                <br>
+                <div id="six">
+                  <label><b>Gender:</b></label>
+                  <div class="radio">
+                    <input type="radio" name="gender" value="M" [(ngModel)]="employer.gender" #gender="ngModel"> Male<br>
+                    <br>
+                    <input type="radio" name="gender" value="F" [(ngModel)]="employer.gender" #gender="ngModel"> Female<br>
+                  </div>
+                </div>
+                <br>
+                <br>
+                <div id="seven">
+                  <label><b>Birthday:</b></label>
+                  <input type="text" name="birthday" placeholder="Birthday">
+                </div>
+                <br>
+                <div id="ten">
+                  <label><b>CNP:</b></label>
+                  <input type="number" name="cnp" placeholder="CNP" [(ngModel)]="employer.cnp" #cnp="ngModel">
+                </div>
+                <br>
+                <div id="eight">
+                  <label><b>Adress:</b></label>
+                  <input type="text" name="adress" placeholder="Adress" [(ngModel)]="employer.adress" #adress="ngModel">
+                </div>
+                <br>
+                <div id="nine">
+                  <label><b>Phone number:</b></label>
+                  <input type="number" name="phone" placeholder="Phone no." [(ngModel)]="employer.phone" #phone="ngModel">
+                </div>
+                <br>
+
+                <button class="button button3" (click)="updateEmployer()" routerLink="/teachers">Save</button>
+
+                 <button class="button button" routerLink="/teachers">Cancel</button>
+              </form>
+
+            </div>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

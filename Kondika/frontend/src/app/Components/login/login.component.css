@@ -1,0 +1,82 @@
+header {
+   
+    text-align: left;
+    padding: 20px 0 0;
+    padding-top: 20px;
+    padding-bottom: 0px ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    border-bottom: 2px solid  #24478f ;   
+}
+header:hover {
+    color:#24478f;
+}
+
+.container {
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    background-color:	#D3D3D3;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 200px; 
+}
+.container img {
+    width: 160px;
+    height: 160px;
+    margin-top: -80px;
+    margin-bottom: 20px;
+
+}
+
+input[type="text"],input[type="password"]{
+    height: 45px;
+    width: 250px;
+    font-size: 18px;
+    border-radius: 10px;
+    border:none;
+    margin-bottom: 20px;
+    padding-left: 45px;
+    background-color: #fff;
+    
+}
+.checkbox {
+    margin-right: 170px;
+    margin-top: 0px;
+    color:  #24478f;
+
+}
+ .btn-login {
+     margin-top:20px;
+     padding: 15px 50px;
+     cursor: pointer;
+     color: #fff;
+     border-radius: 15px;
+     border: none;
+     background-color: #2ECC71;
+     border-bottom: 4px solid #27AE60;
+     margin-bottom: 20px;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 18px;
+ }
+.btn-login:hover {
+    color:#006633; 
+}
+a {
+    color: #24478f;
+    
+}
+a:hover {
+    color: #fff;
+}
+.cust {
+    position: absolute;
+    background: #fff;
+    margin-right: 16px;
+    margin-top: 1px;
+    width: 40px;
+    height: 30px;
+    padding-top: 9px;
+    border-radius: 8px;
+}
+

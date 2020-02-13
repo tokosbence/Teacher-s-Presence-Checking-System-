@@ -1,0 +1,33 @@
+<table width="100%">
+  <tr>
+    <td valign="top" width="200px">
+      <app-adminnavbar></app-adminnavbar>
+    </td>
+    <td valign="top">
+      <div class="container">
+        <h1> Add Class</h1>
+    <form>
+          <p>
+            <label><b>Class Name:</b></label>
+            <input type="text" placeholder="Class name" name="classname" [(ngModel)]="newClass.name" #name="ngModel">
+          </p>
+          <p>
+            <label><b>Form master:</b></label>
+            <input type="text" placeholder="Form master" name="Formmaster" [(ngModel)]="newClass.form_master" #formmaster="ngModel">
+          </p>
+           <p>
+            <label><b>Profile:</b></label>
+            <input type="text" placeholder="Profile" name="Profile" [(ngModel)]="newClass.profile" #profile="ngModel">
+          </p>
+           <p>
+            <label><b>Student number:</b></label>
+            <input type="number" name="number" placeholder="Student number" [(ngModel)]="newClass.student_number" #studentnumber="ngModel">
+           </p>
+          <button class="button button3" (click)="addClass(newClass)" routerLink="/class" >Add classes</button>
+         
+          <button class="button button" routerLink="/class">Cancel</button>
+        </form>
+      </div>
+    </td>
+  </tr>
+</table>

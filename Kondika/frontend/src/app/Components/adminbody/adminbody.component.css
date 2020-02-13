@@ -1,0 +1,328 @@
+.container-view {
+    margin-top: -950px;
+}
+
+
+.container {
+    width: 1660px;
+    height: 190px;
+    background-color:	white;
+    border-radius: 15px;
+    margin: auto;
+    margin-left: 220px;
+    margin-top:115px;
+ 
+        
+}
+
+.panel-heading {
+     height: 60px;
+     text-align: center;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 22px;
+     text-align: center;
+     background-color: #39ac73;
+     border: 1px solid  #D3D3D3;
+     border-radius: 15px; 
+     margin-top: -140px;
+     
+}
+.panel-title {
+    text-align: left;
+    margin-top: 14px;
+    margin-left: 35px;
+    
+}
+
+ .panel-body div {
+     font-family: 'Times New Roman', Times, serif;
+     border-radius: 10px;
+     
+     color: black;
+     text-align: center;
+     font-size: 25px;
+     height: 80px;
+     width: 320px;
+     float:left;
+     margin:20px;
+     margin-left: 55px;
+     margin-right: 20px;
+     cursor: pointer;
+ }
+
+#first {
+    background-color: #0086b3;
+    border-bottom: 6px solid  #007399;
+
+}
+#second {
+    background-color: #ff9966;
+    border-bottom: 6px solid   #ff884d;
+}
+#third {
+    background-color: #009999;
+    border-bottom: 6px solid   #008080;
+}
+#fourth {
+    background-color:   #800040;
+    border-bottom: 6px solid   #660033;
+
+}
+.cust {
+    margin-top: 15px;
+}
+/* ----------- Event & News ----------*/
+
+ .container-second {
+     border-left: 10px solid black;
+     background-color: #e6e6e6;
+     height: 210px;
+     width: 770px;
+     margin-left: 220px;
+     border-radius: 15px;
+     margin-top: 15px;
+ }
+.container-second-title b {
+    margin-top: 100px;
+    margin-left:5px;
+   
+}
+.va {
+  margin-left:15px;  
+}
+.panel-one {
+    margin-left: 15px;
+    margin-right: 30px;
+    border-radius: 4px;
+   
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    height: 30px;
+    background-color:#80bfff;
+}
+
+.panel-two {
+    margin-left: 15px;
+    margin-right: 30px;
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    height: 30px;
+    background-color:#ff6600;
+}
+.panel-three {
+    margin-left: 15px;
+    margin-right: 30px;
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    height: 30px;
+    background-color:  #7575a3;
+}
+.container-third {
+    height: 390px;
+    width: 290px;
+    margin-left: 220px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.container-third img {
+    margin-top: -13px;
+    height: 250px;
+    width: 270px;
+    
+}
+
+/*------------------------ New Teacher ---------------*/
+
+.container-third p{
+    color: black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+
+}
+
+/*------------------------ Timer ---------------*/
+.container-fourth {
+    margin-left: 1030px;
+    margin-top: -622px;
+    border-radius: 14px;
+    height: 205px;
+    width: 500px;
+    background-color: white;
+    border-top: 6px solid red;
+    border-bottom: 4px solid black;
+}
+.container-fourth p {
+  text-align: center;
+  font-size: 60px;
+}
+
+.container-fourth h1{
+  margin-left: 115px;
+  color: #b30000;
+  font-weight: 100;
+  font-size: 40px;
+ 
+}
+
+#clockdiv{
+    margin-left: 115px;
+    height: 50px;
+    font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 250;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #b30000;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #800000;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
+
+/* ------------------- Quotes --------------*/
+
+.container-fifth {
+    background-color: #ffe6cc;
+    height: 210px;
+    width: 300px;
+    border-radius: 14px;
+    border-left: 7px solid #bfbfbf;
+    border-top: 7px solid #bfbfbf;
+    margin-left: 1552px;
+    margin-top: -216px;
+    text-align: center;
+
+}
+.quotes {
+
+    margin-top: 35px;
+    text-align: center;
+    
+}
+
+/* ------------------- Calendar ----------------*/
+
+.container-six {
+    margin-left: 1005px;
+    margin-top: 20px;
+    width: 880px;
+    height: 380px;
+    border-radius: 14px;
+    background-color: #1abc9c;
+}
+.container-six h1{
+    color:white;
+    margin-left: 25px;
+   
+}
+
+.container-six month {
+    padding: 67px 25px;
+    width: 98%;
+    background: #1abc9c;
+}
+
+.container-six month ul {
+    margin: 0px;
+    padding: 0;
+}
+
+.month ul li {
+    
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
+
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+
+/* -------------------------    ----------------------------*/
+
+.container-seven {
+    background-color:  #0099cc;
+    height: 390px;
+    width: 460px;
+    border-radius: 14px;
+    margin-left: 530px;
+    margin-top: -380px;
+
+}

@@ -1,0 +1,44 @@
+<table class="table table-one" bgcolor="#f2f2f2" width="100%">
+  <tr>
+    <td valign="top" width="200px" >
+      <app-adminnavbar></app-adminnavbar>
+    </td>
+    <td valign="top">
+      <div class="container">
+        <div class="panel panel-default ">
+          <button class="button" routerLink="/classes/new">Add Class</button>
+          <h1 class="panel-title">
+            <i class="fa fa-sitemap "></i> Classes
+          </h1>
+        </div>
+      </div>
+      <div class="container-two">
+        <h1>Classes</h1>
+        <div class="input">
+          <input type="text" ng-model="searchBox">
+          <i class="fa fa-search " aria-hidden="true"></i>
+        </div>
+        <table class="table table-hover" width="100%">
+          <tr>
+            <th>Name</th>
+            <th>Form master</th>
+            <th>Profile</th>
+            <th>Student number</th>
+            <th></th>
+          </tr>
+          <tr *ngFor="let class of classes">
+            <td>{{class.name}}</td>
+            <td>{{class.form_master}}</td>
+            <td>{{class.profile}}</td>
+            <td>{{class.student_number}}</td>
+            <td>
+                <button class="button button1"  routerLink="/class/updateClass/{{class.id}}" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                <button class="button button2"  (click)="deleteClass(class); $event.stopPropagation()"  title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,29 @@
+<table width="100%">
+  <tr>
+    <td valign="top" width="200px">
+      <app-adminnavbar></app-adminnavbar>
+    </td>
+    <td valign="top">
+      <div class="container">
+        <h1> Add Room</h1>
+    <form>
+          <p>
+            <label><b>Room Name:</b></label>
+            <input type="text" placeholder="Room name" name="roomname" [(ngModel)]="room.name" #name="ngModel">
+          </p>
+          <p>
+            <label><b>Key location:</b></label>
+            <input type="text" placeholder="Key location" name="Keylocation" [(ngModel)]="room.key_location" #key="ngModel">
+          </p>
+           <p>
+            <label><b>Floor:</b></label>
+            <input type="number" name="floor" placeholder="Floor" [(ngModel)]="room.floor" #floor="ngModel">
+           </p>
+          <button class="button button3" (click)="updateRoom()" routerLink="/room" >Save</button>
+             
+          <button class="button button" routerLink="/room">Cancel</button>
+        </form>
+      </div>
+    </td>
+  </tr>
+</table>

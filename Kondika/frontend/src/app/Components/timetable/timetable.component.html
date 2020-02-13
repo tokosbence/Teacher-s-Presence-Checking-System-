@@ -1,0 +1,35 @@
+<table width="100%">
+  <tr>
+    <td valign="top" width="200px">
+      <app-adminnavbar></app-adminnavbar>
+    </td>
+    <td valign="top">
+      <div class="container">
+        <div class="panel panel-default ">
+          <h1 class="panel-title">
+            <i class="fa fa-table"></i> Timetable
+          </h1>
+        </div>
+      </div>
+      <div class="container-two">
+        <h2>Select class to edit timetable</h2>
+        <div class="input">
+          <input type="text" placeholder="Search" ng-model="searchBox">
+          <i class="fa fa-search " aria-hidden="true"></i>
+        </div>
+        <table class="table table-hover" width="100%">
+          <tr>
+            <th>Class Name</th>
+            <th>Operations</th>
+          </tr>
+          <tr *ngFor="let timetable of timetables">
+            <td>{{timetable.classes.name}} </td>
+            <td>
+              <button class="button button1" routerLink="/updatetimetable"><i class="fa fa-fw fa-th-list cust"></i></button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+</table>

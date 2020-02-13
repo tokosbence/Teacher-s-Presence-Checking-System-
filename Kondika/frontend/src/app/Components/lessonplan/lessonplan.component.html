@@ -1,0 +1,45 @@
+<table width="98%">
+  <tr>
+    <td valign="top" width="200px">
+      <app-usernavbar></app-usernavbar>
+    </td>
+    <td valign="top">
+      <div class="container">
+        <div class="panel panel-default ">
+          <button class="button" routerLink="/lessonplan/new">Add Lessonplan</button>
+          <h1 class="panel-title">
+            <i class="fa fa-book" aria-hidden="true"></i> Lessonplan
+          </h1>
+        </div>
+      </div>
+      <div class="container-two">
+        <div class="input">
+          <input type="text" ng-model="searchBox">
+          <i class="fa fa-search " aria-hidden="true"></i>
+        </div>
+        <table class="table table-hover" width="100%">
+          <tr>
+           <!-- <th class="pointer" (click)="sort('Week_number')" style="width:10%">Week number
+              <i class="fa" [ngClass]="{'fa-sort': column != 'Week_number', 'fa-sort-asc': (column == 'Week_number' && isDesc), 'fa-sort-desc': (column == 'Week_number' && !isDesc) }" aria-hidden="true"> </i>
+            </th>-->
+            <!--<th style="width:10%">Week number</th>-->
+            <th style="width:10%">Hours number</th>
+            <th style="width:10%">Name</th>
+            <th style="width:65%">Lessons</th>
+            <th style="width:10%"> </th>
+          </tr>
+          <tr *ngFor="let lessonplan of lessonplans" >
+            <!--<td >{{lessonplan.week_number}}</td>-->
+            <td >{{lessonplan.hours_number}}</td>
+            <td>{{lessonplan.name}}</td>
+            <td>{{lessonplan.lessons}}</td>
+            <td>
+              <button class="button button1" routerLink="/lessonplan/updateLessonplan/{{lessonplan.id}}" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+              <button class="button button2" (click)="deleteLessonplan(lessonplan); $event.stopPropagation()" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+</table>

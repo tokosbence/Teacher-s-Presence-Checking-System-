@@ -1,0 +1,41 @@
+<table class="table table-one" bgcolor="#f2f2f2" width="100%">
+  <tr>
+    <td valign="top" width="200px">
+      <app-adminnavbar></app-adminnavbar>
+    </td>
+    <td valign="top">
+      <div class="container">
+        <div class="panel panel-default ">
+          <button class="button" routerLink="/schedule/new">Add Schedule</button>
+          <h1 class="panel-title">
+            <i class="fa fa-clock-o cust"></i> Schedule
+          </h1>
+        </div>
+      </div>
+      <div class="container-two">
+        <h1>Schedule</h1>
+        <div class="input">
+          <input type="text" ng-model="searchBox">
+          <i class="fa fa-search " aria-hidden="true"></i>
+        </div>
+        <table class="table table-hover" width="100%">
+          <tr>
+            <th>Start School Year</th>
+            <th>End School Year</th>
+            <th>Week numbers</th>
+            <th></th>
+          </tr>
+          <tr *ngFor="let schedule of schedules">
+            <td>{{schedule.start_date}}</td>
+            <td>{{schedule.end_date}}</td>
+            <td>{{schedule.week_number}}</td>
+            <td>
+              <button class="button button1" routerLink="/schedule/updateSchedule/{{schedule.id}}" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+              <button class="button button2" (click)="deleteSchedule(schedule); $event.stopPropagation()" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+</table>

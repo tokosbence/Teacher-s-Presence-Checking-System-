@@ -1,0 +1,32 @@
+<table  width="100%">
+  <tr>
+    <td valign="top" width="200px">
+      <app-usernavbar></app-usernavbar>
+    </td>
+    <td valign="top" >
+      <div class="container">
+        <h1> Add Lessonplan</h1>
+        <form>
+          <p >
+            <label><b>Week number:</b></label>
+            <input type="number" placeholder="Week number" name="weeknumber" [(ngModel)]="lessonplan.week_number" #week="ngModel">
+          </p>
+          <p >
+            <label><b>Hours number:</b></label>
+            <input type="number" placeholder="Hours number" name="hoursnumber" [(ngModel)]="lessonplan.hours_number" #hours="ngModel">
+          </p>
+          <p>
+            <label><b>Name:</b></label>
+            <input type="text" placeholder="Name" name="name" [(ngModel)]="lessonplan.name" #name="ngModel">
+          </p>
+          <p>
+            <label><b>Lessons:</b></label>
+            <input type="text" placeholder="Lessons" name="lessons" [(ngModel)]="lessonplan.lessons" #lessons="ngModel">
+          </p>
+          <button class="button button3" (click)="updateLessonplan()"  >Save</button>
+          <button class="button button" routerLink="/lessonplan">Cancel</button>
+        </form>
+      </div>
+    </td>
+  </tr>
+</table>

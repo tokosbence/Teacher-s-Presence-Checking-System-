@@ -1,0 +1,34 @@
+<table width="100%" border="2">
+  <tr border="2">
+    <td valign="top" width="200px" >
+      <app-adminnavbar></app-adminnavbar>
+    </td>
+      <table class="table table-hover"border="3" width="100%">
+        <th class="container" >
+          <h1> List of holidays </h1>
+          <tr> 
+            <th width="250px"> Holidays date </th>
+            <tr *ngFor="let schedule of schedules">
+              <td> {{schedule.holidays.date}}</td>
+              <td>
+                <button class="button button1" routerLink="/holidays/updateHolidays/{{holidays.id}}" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                <button class="button button2" (click)="deleteHolidays(holidays); $event.stopPropagation()" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+              </td>
+          </tr>
+        </th>
+        <th class="container1"> 
+          <h1> Add holidays </h1>
+          <p>
+             <label> Holidays </label>
+             <input type="date" name="holidays" placeholder="Holidays" [(ngModel)]="newSchedule.holidays.date" #holidays="ngModel">
+          </p>
+          <button class="button button3" (click)="addSchedule(newSchedule)" >Add schedule</button>
+          <label>{{errormessage}}</label>
+          <button class="button button" routerLink="/schedule">Cancel</button>
+
+        </th>
+        
+      </table>
+  
+  </tr>
+</table>   

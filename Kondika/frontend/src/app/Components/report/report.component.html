@@ -1,0 +1,40 @@
+<table class="table table-one" bgcolor="#f2f2f2" width="100%">
+  <tr>
+    <td valign="top" width="200px">
+      <app-adminnavbar></app-adminnavbar>
+    </td>
+    <td valign="top">
+      <div class="container">
+        <div class="btn-group">
+            <button class="button" value="Refresh" routerLink="/report">Refresh</button>
+        </div>
+        <div class="panel panel-default ">
+          <h1 class="panel-title">
+           <i class="fa fa-bell" aria-hidden="true"></i> Actually Reports
+          </h1>
+        </div>
+      </div>
+     
+      <div   class="container-two" >
+      
+           <div  class="container-entry" *ngFor="let report of reports " >
+             <p >
+             {{report.timetable.start_time}} -  {{report.timetable.end_time}}<br>
+             {{report.room.name}} <br>
+             {{report.subject.name}} -  {{report.classObj.name}} <br>    
+            </p>  
+            <p *ngIf = "report.employer">
+              {{report.employer.firstname}}  {{report.employer.lastname}}
+              </p>
+           <div class="redbox" *ngIf = "!report.employer">
+              
+           </div>
+             <div class="greenbox" *ngIf= "report.employer">
+              
+           </div>
+
+          </div>
+      </div>
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,81 @@
+.table-one{
+ height: 825px;
+ border-radius: 10px;
+}
+
+.container {
+    background-color: #f2f2f2;     
+    height: 75px;
+    border-radius: 4px;
+}
+ 
+.container .panel-title {
+    float: left; 
+}
+
+.container .button {
+    background-color: #4CAF50; 
+    border: 1px solid green;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    float: right;
+    margin-top: 20px;
+}
+
+.container .button:hover {
+    background-color: #3e8e41;
+}
+
+.container-two {
+    background-color:white;
+    border-top: 5px solid  gray;
+    border-radius: 4px;
+    height: 500px;
+}
+
+.container-two h1 {
+     text-align: left;
+     margin-left: 20px;
+}
+
+.input {
+   float: right;
+   margin-right: 40px;
+   margin-top: 0px;
+
+}
+
+.container-two table {
+    border-collapse: collapse;
+}
+
+.button1 {
+    padding: 10px;
+    border: 0px;;
+    background-color: #2196f3;
+    cursor: pointer;
+} 
+
+.button2 {
+    padding: 10px;
+    border: 0px;
+    background-color: #f44336;
+    cursor: pointer;
+} 
+
+.container-two th, td {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+}
+
+.container-two tr:hover{
+    background-color:#f5f5f5;
+}

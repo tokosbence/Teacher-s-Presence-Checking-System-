@@ -1,0 +1,221 @@
+<!--                   Header              -->
+<div class="teacheruser">
+<ul>
+  <li><a href="#logout">
+      <i class="fa fa-power-off" ></i>
+      <b>Logout</b>
+      </a>
+  </li>
+  <li><a href="#user">
+      <i class="fa fa-user" aria-hidden="true"></i>
+      <b>User Name</b>
+      </a>
+  </li>
+  <li><a ng-click="chgAcYearModal()">
+        <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+        </a>
+  </li>
+</ul>
+
+<!-- Navbar -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="vertical-menu">
+  
+  <a href="#" class="active"><b>Kondika</b>
+    
+  </a>
+   <a href="#">
+    <i class="fa fa-user-circle cust" aria-hidden="true"></i>
+    <b>Teachers</b>
+  </a>
+  <a href="#">
+    <i class="fa fa-book cust" aria-hidden="true"></i>
+    <b>Subjects</b>
+  </a>
+  <a href="#">
+    <i class="fa fa-clock-o cust" aria-hidden="true"></i>
+    <b>Classes Schedule</b>
+  </a>
+  <a href="#">
+    <i class="fa fa-envelope cust" aria-hidden="true"></i>
+    <b>Messages</b>
+  </a>
+  <a href="#">
+    <i class="fa fa-calendar cust" aria-hidden="true"></i>
+    <b>Calendar</b>
+  </a>
+  <a href="#">
+    <i class="fa fa-building cust" aria-hidden="true"></i>
+    <b>Classes</b>
+  </a>
+  <a href="#">
+    <i class="fa fa-glass cust" aria-hidden="true"></i>
+    <b>Events</b>
+  </a>
+  <a href="#">
+    <i class="fa fa-file cust" aria-hidden="true"></i>
+    <b>Study Material</b>
+  </a>
+  <a href="#">
+    <i class="fa fa-folder-open cust" aria-hidden="true"></i>
+    <b>Library</b>
+  </a>
+  <a href="#">
+    <i class="fa fa-camera-retro cust" aria-hidden="true"></i>
+    <b>Media Center</b>
+  </a>
+  <a href="#">
+    <i class="fa fa-list cust" aria-hidden="true"></i>
+    <b>Exams List</b>
+  </a> 
+  
+</div>
+<!--                     Body                       -->
+ 
+<div *ngIf=isEdit class="container-three" >
+  
+   <h1> Edit teacher</h1>
+
+    <button (click)="toggleEdit()">Cancel</button>
+
+   <form >
+      <div id="one" >
+        <label ><b>First Name:</b></label> 
+        <input type="text" ng-model="firsname" placeholder="First name" >
+      </div>
+      <br>
+    <div id="two">
+      <label><b>Last Name:</b></label>
+      <input type="text" ng-model="lastname" placeholder="Last name" >
+    </div>
+     <br>
+     <div id="three">
+      <label><b>Username:</b></label>
+      <input type="text" ng-model="username" placeholder="Username" >
+    </div>
+     <br>
+    <div id="four">
+      <label><b>Email adress:</b></label>
+      <input type="text" ng-model="email" placeholder="Email adress" >
+    </div>
+    <br>
+    <div id="five">
+      <label><b>Password:</b></label>
+      <input type="password" ng-model="password" placeholder="Password" >
+    </div>
+    <br>
+    <div id="six">
+      <label><b>Gender:</b></label>
+      <div class="radio">
+        <input type="radio" name="gender" value="male"> Male<br>
+        <br>
+        <input type="radio" name="gender" value="female"> Female<br>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div id="seven">
+      <label><b>Birthday:</b></label>
+      <input type="text" ng-model="birthday" placeholder="Birthday" >
+    </div>
+    <br>
+    <div id="ten">
+      <label><b>CNP:</b></label>
+      <input type="number" ng-model="cnp" placeholder="CNP" >
+    </div>
+    <br>
+    <div id="eight">
+      <label><b>Adress:</b></label>
+      <input type="text" ng-model="adress" placeholder="Adress" >
+    </div>
+    <br>
+    <div id="nine">
+      <label><b>Phone number:</b></label>
+      <input type="number" ng-model="phone" placeholder="Phone no." >
+    </div>
+    <br>
+
+    
+     
+   <button class="button button3" (click)="toggleEdit()">Edit teacher</button>
+
+   </form>
+  
+</div>
+
+<div class="container"> 
+ <div *ngIf=isAdd ng-class="{'hidden': !toggleEdit}">
+    <h1>List teachers</h1>
+
+    <div class="input">
+      
+      <input type="text" ng-model="searchBox">
+      <i class="fa fa-search " aria-hidden="true"></i>
+
+    </div>
+
+  <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Full name</th>
+          <th>Username</th>
+          <th>Email adress</th>
+          <th>CNP</th>
+          <th>Operations</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Doe</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+          <td>0124586545</td>
+          <td>
+              <button class="button button1" (click)="toggleEdit()" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+              <button class="button button2" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+            </td>
+        </tr>
+        <tr>
+          <td>Mary Moe</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+          <td>0124586545</td>
+          <td>
+            
+              <button class="button button1" (click)="toggleEdit()" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+              <button class="button button2" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+              
+          </td>
+        </tr>
+        <tr>
+          <td>July Dooley</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+          <td>0124586545</td>
+          <td>
+              <button class="button button1" (click)="toggleEdit()" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+              <button class="button button2" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="container-two">
+  
+  <div class="panel panel-default ">
+    <div id="first">
+      <i class="fa fa-suitcase fa-2x cust" aria-hidden="true"></i>
+      <h1 class="panel-title"><b>Teachers</b></h1>
+    </div>
+  </div>
+</div> 
+
+
+<!--                    Footer                       -->
+<footer>
+        <p>Copyright © 2017<a style="color:#0a93a6; text-decoration:none;" href="http://www.codespring.ro/"> Codespring</a>- Software development and outsourcing </p>
+</footer>
+</div>

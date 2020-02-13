@@ -1,0 +1,61 @@
+<table width="100%">
+  <tr>
+    <td valign="top" width="200px">
+      <app-adminnavbar></app-adminnavbar>
+    </td>
+    <td valign="top">
+      <div class="container">
+        <h1>Add teacher</h1>
+        <form>
+          <p>
+            <label><b>First Name:</b></label>
+            <input type="text" placeholder="First name" name="firstname" [(ngModel)]="newEmployer.firstname" #firstname="ngModel">
+          </p>
+          <p>
+            <label><b>Last Name:</b></label>
+            <input type="text" name="lastname" placeholder="Last name" [(ngModel)]="newEmployer.lastname" #lastname="ngModel">
+          </p>
+          <p>
+            <label><b>Username:</b></label>
+            <input type="text" name="username" placeholder="Username" [(ngModel)]="newEmployer.employeUser.username" #username="ngModel">
+          </p>
+          <p>
+            <label><b>Email adress:</b></label>
+            <input type="text" name="email" placeholder="Email adress" [(ngModel)]="newEmployer.email" #email="ngModel">
+          </p>
+          <p>
+            <label><b>Password:</b></label>
+            <input type="password" name="password" placeholder="Password" [(ngModel)]="newEmployer.employeUser.password" #password="ngModel">
+          </p>
+          <div id="six">
+            <label><b>Gender:</b></label>
+            <div class="radio">
+              <input type="radio" name="gender" value="M" [(ngModel)]="newEmployer.gender" #gender="ngModel"> Male<br>
+              <br>
+              <input type="radio" name="gender" value="F" [(ngModel)]="newEmployer.gender" #gender="ngModel"> Female<br>
+            </div>
+          </div>
+          <p>
+            <label><b>Birthday:</b></label>
+            <input type="text" name="birthday" placeholder="Birthday">
+          </p>
+          <p>
+            <label><b>CNP:</b></label>
+            <input type="number" name="cnp" placeholder="CNP" [(ngModel)]="newEmployer.cnp" #cnp="ngModel">
+          </p>
+          <p>
+            <label><b>Adress:</b></label>
+            <input type="text" name="adress" placeholder="Adress" [(ngModel)]="newEmployer.adress" #adress="ngModel">
+          </p>
+          <p>
+            <label><b>Phone number:</b></label>
+            <input type="number" name="phone" placeholder="Phone no." [(ngModel)]="newEmployer.phone" #phone="ngModel">
+          </p>
+          <button class="button button3" (click)="addEmployer(newEmployer,newEmployeUser)">Add teacher</button>
+          <label class="error">{{errormessage}}</label>
+          <button class="button button1" routerLink="/teachers">Cancel</button>
+        </form>
+      </div>
+    </td>
+  </tr>
+</table>
